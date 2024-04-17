@@ -1,0 +1,32 @@
+<Window x:Class="Hearts.HeartsRules"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hearts Card Game Rules" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="true">
+	<Grid>
+		<ScrollViewer VerticalScrollBarVisibility="Auto">
+			<StackPanel Margin="20">
+				<TextBlock Text="Hearts Card Game Rules" FontWeight="Bold" FontSize="20" Margin="0 0 0 10"/>
+				<TextBlock TextWrapping="Wrap">
+                    Hearts is a trick-taking game played with a standard deck of 52 playing cards.
+                    The game is typically played with four players, although variations with different
+                    numbers of players are also common.
+				</TextBlock>
+				<TextBlock TextWrapping="Wrap" FontWeight="Bold" Margin="0 10 0 5">Objective:</TextBlock>
+				<TextBlock TextWrapping="Wrap">
+                    The objective of the game is to have the lowest score at the end of the game.
+                    Players earn points by collecting hearts and the Queen of Spades in tricks.
+				</TextBlock>
+				<TextBlock TextWrapping="Wrap" FontWeight="Bold" Margin="0 10 0 5">Gameplay:</TextBlock>
+				<TextBlock TextWrapping="Wrap">
+                    1. The player with the 2 of Clubs starts the first trick, and players must follow suit if possible.
+                    2. The highest card of the leading suit wins the trick, unless a Heart or the Queen of Spades is played.
+                    3. Hearts cannot be led until they have been "broken" by a player in a previous trick.
+                    4. The Queen of Spades (commonly called the "Black Lady") carries 13 penalty points if taken in a trick.
+                    5. At the end of each hand, players tally their points based on the cards they have collected.
+				</TextBlock>
+				<!-- Exit Button -->
+				<Button Content="Exit" Click="ExitButton_Click" HorizontalAlignment="Right" Margin="0 20 0 0"/>
+			</StackPanel>
+		</ScrollViewer>
+	</Grid>
+</Window>

@@ -5,8 +5,104 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hearts"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Hearts"  Height="900" Width="1350" WindowStartupLocation="CenterScreen" Loaded="Load_StartWindow">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+        
+        <!-- Score Grid -->
+        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="6" BorderThickness="2" BorderBrush="black"></Border>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="6" >
+			<Grid.RowDefinitions>
+				<RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+				<RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+             <!-- Title-->
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Label Grid.Row="0" Grid.ColumnSpan="3" FontSize="24" HorizontalAlignment="center" VerticalAlignment="Center">Score (this round)</Label>
+
+             <!--Headings-->
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            
+            <Label Grid.Row="1" Grid.Column="1"  HorizontalAlignment="center" VerticalAlignment="Center" >Score this round</Label>
+            <Label Grid.Row="1" Grid.Column="2"  HorizontalAlignment="center" VerticalAlignment="Center">Total Score</Label>
+                
+            <!--Player Row-->
+            <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Player</Label>
+
+			<!--Computer 1 Row-->
+            <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            
+            <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Computer 1</Label>
+
+			<!--Computer 2 Row-->
+            <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            
+            <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Computer 2</Label>
+
+			<!--Computer 3 Row-->
+            <Border Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+            <Border Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderThickness="2" BorderBrush="black"></Border>
+
+            <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Computer 3</Label>
+
+
+
+        </Grid>
+
+
+         <!-- Launch Settings button-->
+		<Button Grid.Row="0" Grid.Column="10" Grid.ColumnSpan="2" FontSize="24" Click="LaunchSettings">Settings</Button>
+
+	</Grid>
 </Window>

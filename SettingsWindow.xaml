@@ -1,0 +1,40 @@
+﻿<Window x:Class="Hearts.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hearts"
+        mc:Ignorable="d"
+        Title="Settings Menu" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="75"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Row 0 -->
+        <Label Grid.Column="1" FontSize="24" HorizontalAlignment="Center" FontFamily="Arial Black">Settings</Label>
+
+        <!-- Row 1 -->
+        <Button Grid.Row="1" Grid.Column="1" Click="StartGame">New Game</Button>
+
+        <!-- Row 2 -->
+        <Button Grid.Row="2" Grid.Column="1"> Game History</Button>
+
+        <!-- Row 3 -->
+        <Button Grid.Row="3" Grid.Column="1" Click="GameRule">Game Rules</Button>
+
+        <!-- Row 7 -->
+        <Button Grid.Row="4" Grid.Column="1" Click="ExitGame">Exit Game</Button>
+    </Grid>
+</Window>
